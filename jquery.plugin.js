@@ -1,7 +1,7 @@
 
 /**
  * @file
- * jQuery plugin boilerplate
+ * jQuery plugin boilerplate.
  * 
  * Created by: Topsitemakers
  * http://www.topsitemakers.com/
@@ -10,13 +10,13 @@
 
   var pluginName = 'boilerplate';
 
-  // Default values
+  // Default values.
   var defaults = {
-    property: "value"
+    property: 'value'
   };
 
   /**
-   * Plugin constructor
+   * Plugin constructor.
    */
   function Plugin(element, options) {
     this.element = element;
@@ -27,25 +27,25 @@
   }
 
   /**
-   * Plugin funtions and events
+   * Plugin funtions and events.
    */
   Plugin.prototype = {
     
     /**
-     * Plugin initialization
+     * Plugin initialization.
      */
     init: function() {
       
-      // Sample - change color of all matched elements
-      $(this.element).css("color", "red");
+      // Sample - change color of all matched elements.
+      $(this.element).css('color', 'red');
 
-      // Sample - log our default value
+      // Sample - log our default value.
       console.log('Default value: ' + this.options.property);
 
     },
 
     /**
-     * Sample function
+     * Sample function.
      */
     sample: function(el, options) {
       
@@ -56,7 +56,7 @@
   }
 
   /**
-   * Plugin wrapper
+   * Plugin wrapper.
    */
   $.fn[pluginName] = function(options) {
     return this.each(function() {
